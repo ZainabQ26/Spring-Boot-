@@ -35,7 +35,6 @@ Developed as part of my Computer Science coursework at Penn State University-Har
 
 - **Backend:** Java, Spring Boot, Spring Security
 - **Frontend:** Thymeleaf, HTML5, CSS3
-- **Database:** [Specify your database - e.g., H2, MySQL, PostgreSQL]
 - **Build Tool:** Maven
 - **IDE:** IntelliJ IDEA / VS Code
 
@@ -69,24 +68,6 @@ mvn spring-boot:run
 http://localhost:8080
 ```
 
-## 📚 Project Structure
-
-```
-Spring-Boot-/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/crumbco/cookiestore/
-│   │   │       ├── config/          # Security configuration
-│   │   │       ├── controller/      # Request handlers
-│   │   │       ├── model/           # Data models
-│   │   │       └── service/         # Business logic
-│   │   └── resources/
-│   │       ├── templates/       # Thymeleaf HTML templates
-│   │       └── application.properties
-└── pom.xml                  # Maven dependencies
-```
-
 ## 💻 Key Learning Outcomes
 
 - Implemented **MVC (Model-View-Controller)** architecture
@@ -103,30 +84,5 @@ Spring-Boot-/
 - SQL injection prevention
 - Session timeout management
 
-## 📸 Screenshots
-
-*Add screenshots of your application here to showcase the UI*
-
-## 🚀 Future Enhancements
-
-- [ ] Add shopping cart functionality
-- [ ] Implement payment gateway integration
-- [ ] Add product image uploads
-- [ ] Create admin dashboard
-- [ ] Add email notifications
-- [ ] Implement search and filtering
-
-## 📝 License
-
-This project was created for educational purposes as part of coursework at Penn State University.
-
 ## 💬 Contact
-
-**Zainab Qazi**
-- GitHub: [@zozo080212](https://github.com/zozo080212)
-- LinkedIn: [linkedin.com/in/zainab--qazi](https://www.linkedin.com/in/zainab--qazi/)
-- Email: zainabqazi1712@gmail.com
-
----
-
-*Built with ❤️ as part of my journey in full-stack web development*
+**Zainab Qazi** - [GitHub](https://github.com/ZainabQ26) - [LinkedIn](https://www.linkedin.com/in/zainab--qazi/)
