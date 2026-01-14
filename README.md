@@ -49,7 +49,7 @@ Developed as part of my Computer Science coursework at Penn State University-Har
 
 1. Clone the repository
 ```bash
-git clone https://github.com/zozo080212/Spring-Boot-.git
+git clone https://github.com/ZainabQ26/Spring-Boot-.git
 cd Spring-Boot-
 ```
 
