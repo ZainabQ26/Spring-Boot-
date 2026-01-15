@@ -83,6 +83,6 @@ Storage is in-memory via a service layer; no database/ORM is used.
 
 ## 💬 Contact
 
-Zainab Qazi – [GitHub](https://github.com/ZainabQ26) – [LinkedIn](https://www.linkedin.com/in/zainab-qazi/)
+Zainab Qazi – [GitHub](https://github.com/ZainabQ26) – [LinkedIn](https://www.linkedin.com/in//)
 
 Project Link: [https://github.com/ZainabQ26/Spring-Boot-](https://github.com/ZainabQ26/Spring-Boot-)
