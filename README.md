@@ -1,88 +1,67 @@
-# 🍪 Cookie Store Web Application
+🍪 Overview
+A Spring Boot MVC web application for managing a fictional cookie store’s inventory. The app demonstrates authentication with Spring Security, server‑rendered views with Thymeleaf, and basic in‑memory CRUD operations.
 
-A full-stack e-commerce web application for managing a fictional cookie store inventory. Built with Spring Boot and Java, this project demonstrates modern web development practices including user authentication, CRUD operations, and responsive UI design.
+✨ Features
+User Authentication & Authorization
+Secure login using Spring Security
+Auth required for dashboard, inventory, and all cookie operations
+Inventory Management
+Create, view, and edit cookie products
+Delete endpoint available (POST /cookie/delete) — add a Delete button in the UI if desired
+In‑memory storage (data resets on app restart)
+Dashboard & Views
+Simple, user‑friendly pages built with Thymeleaf
 
-## 🎓 Course Project
-Developed as part of my Computer Science coursework at Penn State University-Harrisburg to demonstrate proficiency in:
-- Backend web development
-- Database management
-- Security implementation
-- MVC architecture
+🛠️ Technologies Used
+Backend: Java, Spring Boot, Spring Security
+Frontend: Thymeleaf, HTML5, CSS
+IDE: IntelliJ IDEA or VS Code
 
-## ✨ Features
+🚀 Getting Started
+Prerequisites
 
-- **User Authentication & Authorization**
-  - Secure login system using Spring Security
-  - Password encryption
-  - Session management
+Java 11 or higher
+Optional: Maven 3.6+ (if using CLI to run)
+Clone the repository
 
-- **Inventory Management**
-  - Create, Read, Update, Delete (CRUD) operations for cookie products
-  - Real-time inventory tracking
-  - Product categorization
-
-- **Interactive Dashboard**
-  - User-friendly interface for managing cookie inventory
-  - Analytics and statistics display
-  - Responsive design for mobile and desktop
-
-- **Database Integration**
-  - Persistent data storage
-  - Efficient query optimization
-  - Data validation
-
-## 🛠️ Technologies Used
-
-- **Backend:** Java, Spring Boot, Spring Security
-- **Frontend:** Thymeleaf, HTML5, CSS3
-- **Build Tool:** Maven
-- **IDE:** IntelliJ IDEA / VS Code
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Java 11 or higher
-- Maven 3.6+
-- [Your database if applicable]
-
-### Installation
-
-1. Clone the repository
-```bash
 git clone https://github.com/ZainabQ26/Spring-Boot-.git
 cd Spring-Boot-
-```
+Run the application
 
-2. Build the project
-```bash
-mvn clean install
-```
-
-3. Run the application
-```bash
+Option A: IDE
+Open the project and run the main class: com.crumbco.cookie_store.CookieStoreApplication
+Option B: Maven (requires pom.xml at project root)
 mvn spring-boot:run
-```
+Open your browser
 
-4. Open your browser and navigate to:
-```
 http://localhost:8080
-```
 
-## 💻 Key Learning Outcomes
+🔐 Security
+Default credentials (configured in application.properties):
+Username: COOKIE
+Password: MONSTER
+Public routes: /, /about, /contact
+Authenticated routes: /dashboard, /inventory, /cookie/**
+CSRF
+Enabled by default
+Exemptions in config for /cookie/add and /cookie/edit/**
+Delete is handled at POST /cookie/delete — ensure the form includes a CSRF token or update the exemption to match
 
-- Implemented **MVC (Model-View-Controller)** architecture
-- Developed **RESTful** API endpoints
-- Applied **Spring Security** for authentication and authorization
-- Practiced **database design** and ORM with Spring Data
-- Created **responsive web interfaces** with Thymeleaf
-- Utilized **dependency injection** and IoC principles
+🧱 Data Model
+Cookies {
+  id: Long,
+  name: String,
+  ingredients: String,
+  quantityOnHand: Double,
+  costPer: Double
+}
+Storage is in‑memory via a service layer; no database/ORM is used.
 
-## 🔐 Security Features
-
-- Password hashing with BCrypt
-- CSRF protection
-- SQL injection prevention
-- Session timeout management
+📚 Learning Outcomes
+Implemented MVC (Model–View–Controller) with Spring Boot + Thymeleaf
+Applied Spring Security for basic authentication/authorization
+Used Dependency Injection and IoC with Spring
+Built server‑rendered forms and views with Thymeleaf
 
 ## 💬 Contact
 **Zainab Qazi** - [GitHub](https://github.com/ZainabQ26) - [LinkedIn](https://www.linkedin.com/in/zainab--qazi/)
