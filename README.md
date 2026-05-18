@@ -1,8 +1,8 @@
-# 🍪 Spring Boot Cookie Store
+#  Spring Boot Cookie Store
 
 A Spring Boot MVC web application for managing a fictional cookie store's inventory. The app demonstrates authentication with Spring Security, server-rendered views with Thymeleaf, and basic in-memory CRUD operations.
 
-## ✨ Features
+##  Features
 
 - **User Authentication & Authorization**
   - Secure login using Spring Security
@@ -14,13 +14,13 @@ A Spring Boot MVC web application for managing a fictional cookie store's invent
 - **Dashboard & Views**
   - Simple, user-friendly pages built with Thymeleaf
 
-## 🛠️ Technologies
+##  Technologies
 
 - **Backend**: Java, Spring Boot, Spring Security
 - **Frontend**: Thymeleaf, HTML5, CSS
 - **IDE**: IntelliJ IDEA or VS Code
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -53,7 +53,7 @@ Navigate to:
 http://localhost:8080
 ```
 
-## 🔐 Security
+##  Security
 
 Default credentials (configured in application.properties):
 - **Username**: COOKIE
@@ -67,7 +67,7 @@ Default credentials (configured in application.properties):
 - Exemptions in config for /cookie/add and /cookie/edit/**
 - Delete is handled at POST /cookie/delete — ensure the form includes a CSRF token or update the exemptions
 
-## 🧱 Data Model
+##  Data Model
 
 ```
 Cookies {
@@ -81,8 +81,6 @@ Cookies {
 
 Storage is in-memory via a service layer; no database/ORM is used.
 
-## 💬 Contact
+##  Contact
 
 Zainab Qazi – [GitHub](https://github.com/ZainabQ26) – [LinkedIn](https://www.linkedin.com/in//)
-
-Project Link: [https://github.com/ZainabQ26/Spring-Boot-](https://github.com/ZainabQ26/Spring-Boot-)
